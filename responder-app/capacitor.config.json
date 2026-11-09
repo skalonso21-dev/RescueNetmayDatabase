@@ -1,0 +1,14 @@
+{
+  "appId": "rescue.responder",
+  "appName": "RescueNet Responder",
+  "webDir": "web",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    }
+  }
+}

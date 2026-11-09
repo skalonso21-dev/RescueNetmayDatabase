@@ -1,0 +1,23 @@
+{
+  "name": "rescuenet-responder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RescueNet Responder — standalone Android app for barangay responders. Web files are generated from ../www by sync-web.js.",
+  "scripts": {
+    "sync:web": "node sync-web.js",
+    "sync": "node sync-web.js && cap sync android",
+    "assets": "capacitor-assets generate --android",
+    "build": "node sync-web.js && cap sync android && cd android && gradlew.bat assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/camera": "^8.2.4",
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/geolocation": "^8.2.3"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.5.0"
+  }
+}
